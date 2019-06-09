@@ -7,7 +7,7 @@
       <router-link to="/">
         <div class="iconfont header-fixed-back">&#xe624;</div>
       </router-link>
-      故宮
+      {{name}}
     </div>
   </div>
 </template>
@@ -15,6 +15,9 @@
 <script>
 export default {
   name: 'DetailHeader',
+  props: {
+    name: String
+  },
   data () {
     return {
       showAbs: true,
@@ -35,10 +38,10 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
-  deactivated () {
+  destroyed () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 }
