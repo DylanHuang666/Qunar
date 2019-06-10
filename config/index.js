@@ -12,9 +12,9 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://dylanhuang666.github.io/Qunar',
+        target: 'https://dylanhuang666.github.io',
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/api': '/Qunar/static/mock'
         }
       }
     },
