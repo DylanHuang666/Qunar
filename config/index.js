@@ -14,7 +14,7 @@ module.exports = {
       '/api': {
         target: 'https://dylanhuang666.github.io/Qunar',
         pathRewrite: {
-          '^/api': '/static/mock'
+          '^/api': './static/mock'
         }
       }
     },
