@@ -11,12 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'https://dylanhuang666.github.io',
-        pathRewrite: {
-          '^/api': '/Qunar/static/mock'
-        }
-      }
+      // '/api': {
+      //   target: 'https://localhost:8081',
+      //   pathRewrite: {
+      //     '^/api': '/static/mock'
+      //   }
+      // }
     },
 
     // Various Dev Server settings
