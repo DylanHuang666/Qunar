@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      const top = document.documentElement.scrollTop
+      const top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
       if (top > 0) {
         this.showAbs = false
         let opacity = top / 80
